@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Empêcher le décalage lors de l'ouverture des menus déroulants */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Prévenir le décalage horizontal lors de l'ouverture des dialogs/menus */
+html {
+  overflow-x: hidden;
+}
+
+/* Stabiliser la barre de défilement */
+html, body {
+  scrollbar-gutter: stable;
+}
+
+/* Empêcher le décalage de l'écran lors de l'ouverture des menus déroulants */
+.MuiPopover-root .MuiPaper-root,
+.MuiMenu-root .MuiPaper-root,
+.MuiDialog-root .MuiPaper-root {
+  scrollbar-gutter: stable;
+}
+
+/* Alternative pour empêcher le décalage horizontal */
+body {
+  overflow-y: scroll;
+}
